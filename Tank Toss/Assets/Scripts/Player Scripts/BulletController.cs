@@ -13,7 +13,7 @@ public class BulletController : MonoBehaviour
             ContactPoint contact = collision.contacts[0];
             Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
             Vector3 pos = contact.point;
-            Instantiate(explosionPrefab, pos, rot);
+            Instantiate(explosionPrefab, pos + new Vector3 (0f,-.01f,0f), rot);
             Destroy(gameObject);
         }
     }
