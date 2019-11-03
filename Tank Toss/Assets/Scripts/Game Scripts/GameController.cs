@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public int ammoInit = 4;
     public int ammoCurrent;
     public bool ammoWarningActive = false;
+    public Text AmmoWarningText;
+
+    public Text ParText;
 
     public bool levelComplete = false;
 
@@ -15,6 +19,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         ammoCurrent = ammoInit;
+        ParText.text = "Par " + ammoInit.ToString();
     }
 
     // Update is called once per frame
@@ -45,14 +50,13 @@ public class GameController : MonoBehaviour
     {
         if (ammoCurrent == 0 && !ammoWarningActive)
         {
-            StartCoroutine(DisplayAmmoWarning());
+            ammoWarningActive = true;
+            Invoke("DisplayAmmoWarning", 2f);
         }
     }
 
-    IEnumerator DisplayAmmoWarning()
+    void DisplayAmmoWarning()
     {
-        yield return 120;
-
-
+        AmmoWarningText.text = "Press 'r' to restart";
     }
 }

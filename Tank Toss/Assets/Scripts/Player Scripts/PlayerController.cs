@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float MaxLaunchForce = 40f;
     public float MaxChargeTime = 0.75f;
 
+    private GameController GameCon;
+
     private float CurrentLaunchForce;
     private float ChargeSpeed;
     private bool Fired;
@@ -31,6 +33,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         ChargeSpeed = (MaxLaunchForce - MinLaunchForce) / MaxChargeTime;
+
+        GameCon = GameObject.Find("Game Controller").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -89,13 +93,21 @@ public class PlayerController : MonoBehaviour
         // Instantiate and launch the shell.
         Fired = true;
 
-        Rigidbody shellInstance = Instantiate(Shell, FireTransform.position, FireTransform.rotation); // as Rigidbody
+        ShootingAudio.Stop();
 
-        shellInstance.velocity = CurrentLaunchForce * FireTransform.right;
+        if (GameCon.ammoCurrent > 0)
+        {
+            GameCon.ammoCurrent -= 1;
 
-        ShootingAudio.clip = FireClip;
-        ShootingAudio.Play();
 
-        CurrentLaunchForce = MinLaunchForce;
+            Rigidbody shellInstance = Instantiate(Shell, FireTransform.position, FireTransform.rotation); // as Rigidbody
+
+            shellInstance.velocity = CurrentLaunchForce * FireTransform.right;
+
+            ShootingAudio.clip = FireClip;
+            ShootingAudio.Play();
+
+            CurrentLaunchForce = MinLaunchForce;
+        }
     }
 }

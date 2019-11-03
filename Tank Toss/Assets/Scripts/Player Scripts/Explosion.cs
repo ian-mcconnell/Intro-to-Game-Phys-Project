@@ -11,7 +11,7 @@ public class Explosion : MonoBehaviour
     public AudioSource ExplosionAudio;
     //public ParticleSystem ExplosionParticles;
 
-    void OnTriggerRemain(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player") { Debug.Log("Explosion detected player"); }
         Rigidbody targetRigidbody = other.GetComponent<Rigidbody>();
@@ -26,9 +26,9 @@ public class Explosion : MonoBehaviour
         StartCoroutine(DisableCollider());
     }
 
-    IEnumerator  DisableCollider()
+    IEnumerator DisableCollider()
     {
-        yield return 0;
+        yield return 1;
 
         GetComponent<Collider>().enabled = false;
     }
