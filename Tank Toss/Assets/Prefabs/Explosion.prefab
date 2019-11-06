@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6685516865050543281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.71, y: -1.2, z: 1.3639184}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,6 +63,8 @@ MonoBehaviour:
   ExplosionForce: 1000
   ExplosionRadius: 6
   ExplosionDuration: 1.28
+  ExplosionClip: {fileID: 8300000, guid: 22c2e0498953b8f469a4913e6e71f9bd, type: 3}
+  GlassShatteringClip: {fileID: 8300000, guid: 68ba8defdaa938f4d83d2a3c630e29f3, type: 3}
   ExplosionAudio: {fileID: 5319184492136811996}
 --- !u!82 &5319184492136811996
 AudioSource:

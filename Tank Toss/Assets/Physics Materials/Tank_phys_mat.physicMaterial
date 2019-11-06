@@ -6,7 +6,7 @@ PhysicMaterial:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tank
+  m_Name: Tank_phys_mat
   dynamicFriction: 1.23
   staticFriction: 0.78
   bounciness: 0

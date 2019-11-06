@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource ShootingAudio;
     public AudioClip ChargingClip;
     public AudioClip FireClip;
+    public AudioClip DryFireClip;
     public float MinLaunchForce = 1f;
     public float MaxLaunchForce = 40f;
     public float MaxChargeTime = 0.75f;
@@ -109,5 +110,6 @@ public class PlayerController : MonoBehaviour
 
             CurrentLaunchForce = MinLaunchForce;
         }
+        else { ShootingAudio.clip = DryFireClip; ShootingAudio.Play(); }
     }
 }
