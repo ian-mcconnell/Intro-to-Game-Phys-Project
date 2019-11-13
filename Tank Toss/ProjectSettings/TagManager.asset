@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bouncer
   - Breakable
+  - Bullet
   layers:
   - Default
   - TransparentFX

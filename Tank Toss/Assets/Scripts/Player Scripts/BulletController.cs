@@ -6,14 +6,13 @@ public class BulletController : MonoBehaviour
 {
     public Transform explosionPrefab;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag != "Bouncer")
+        if (other.gameObject.tag != "Bouncer" && other.gameObject.tag != "Bouncer")
         {
-            ContactPoint contact = collision.contacts[0];
-            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-            Vector3 pos = contact.point;
-            Instantiate(explosionPrefab, pos + new Vector3 (0f,-.01f,0f), rot);
+            Vector3 pos = gameObject.transform.position;
+            Instantiate(explosionPrefab, pos, new Quaternion(0f,0f,0f,0f));
+            Destroy(transform.parent.gameObject);
             Destroy(gameObject);
         }
     }
