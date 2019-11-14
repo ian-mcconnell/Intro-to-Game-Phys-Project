@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         ammoCurrent = ammoInit;
-        ParText.text = "Par " + ammoInit.ToString();
+        ParText.text = "Ammo: " + ammoCurrent.ToString();
     }
 
     // Update is called once per frame
@@ -28,6 +28,8 @@ public class GameController : MonoBehaviour
         InputHandler();
         CheckVictory();
         AmmoTracker();
+
+        ParText.text = "Ammo: " + ammoCurrent.ToString();
     }
 
     void InputHandler()
