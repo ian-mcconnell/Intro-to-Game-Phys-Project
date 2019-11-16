@@ -8,6 +8,8 @@ public class GoalScript : MonoBehaviour
 
     private AudioSource audioSource;
 
+    private float victoryDelay = 1.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,14 +29,12 @@ public class GoalScript : MonoBehaviour
             GetComponent<Collider>().enabled = false;
             audioSource.Play();
 
-            StartCoroutine(VictoryPause());
+            Invoke("Victory", victoryDelay);
         }
     }
 
-    IEnumerator VictoryPause()
+    private void Victory()
     {
-        yield return 96;
-
         gameController.levelComplete = true;
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5334025486528741911}
   m_Layer: 0
   m_Name: Explosion
-  m_TagString: Untagged
+  m_TagString: Explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,8 @@ AudioSource:
   m_GameObject: {fileID: 6685516865050543281}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243749679282856870, guid: 00c89233f3f75b14cb5433dd96d03568,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 22c2e0498953b8f469a4913e6e71f9bd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -8,7 +8,7 @@ public class BulletController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag != "Bouncer" && other.gameObject.tag != "Bouncer")
+        if (other.gameObject.tag != "Bouncer" && other.gameObject.tag != "Explosion")
         {
             Vector3 pos = gameObject.transform.position;
             Instantiate(explosionPrefab, pos, new Quaternion(0f,0f,0f,0f));

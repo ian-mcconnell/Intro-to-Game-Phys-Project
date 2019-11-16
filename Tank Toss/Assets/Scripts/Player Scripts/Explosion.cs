@@ -16,7 +16,7 @@ public class Explosion : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject.tag == "Player") { Debug.Log("Explosion detected player"); }
+        
         Rigidbody targetRigidbody = other.GetComponent<Rigidbody>();
 
         targetRigidbody.AddExplosionForce(ExplosionForce, transform.position, ExplosionRadius, .5f);

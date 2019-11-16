@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     // Aiming vars
     public GameObject Cannon;
-    //public float RotationSpeed = 3;
-    //private float RotationAccelerator = 0;
 
     public float DistanceZ;
     public GameObject PlaneObject;
@@ -27,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public float MaxChargeTime = 0.75f;
 
     private GameController GameCon;
+    private PauseMenu pauseMenu;
 
     private float CurrentLaunchForce;
     private float ChargeSpeed;
@@ -42,6 +41,7 @@ public class PlayerController : MonoBehaviour
         ChargeSpeed = (MaxLaunchForce - MinLaunchForce) / MaxChargeTime;
 
         GameCon = GameObject.Find("Game Controller").GetComponent<GameController>();
+        pauseMenu = GameObject.Find("PauseCanvas").GetComponent<PauseMenu>();
 
         aimingPlane = LayerMask.GetMask("Raycast Plane");
     }
@@ -49,33 +49,21 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Aim();
-        Fire();
+        if (pauseMenu.GameIsPaused == false)
+        {
+            Aim();
+            Fire();
+        }
     }
 
     void Aim()
     {
-        //float rotDirection = Input.GetAxis("Horizontal");
-
-        //if (rotDirection != 0)
-        //{
-        //    if (RotationAccelerator < 60) { RotationAccelerator += 1f; }
-        //}
-        //else { RotationAccelerator = 0; }
-
-        //float turn = rotDirection * (RotationSpeed + RotationAccelerator) * Time.deltaTime;
-        //Cannon.transform.Rotate(new Vector3(0f, 0f, turn));
-
-        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, DistanceZ, aimingPlane))
         {
             Vector3 hitPoint = hit.point;
 
-            //Vector3 difference = hitPoint - Cannon.transform.position;
-            //float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            //Cannon.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
             Cannon.transform.LookAt(hitPoint);
 
             //Debug.Log("Ray Hit!");
