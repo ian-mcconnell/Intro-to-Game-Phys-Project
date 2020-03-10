@@ -12,28 +12,28 @@ EditorBuildSettings:
     path: Assets/_Scenes/MainMenu.unity
     guid: c925aa467747bc443be45a5c1fd3d3fa
   - enabled: 1
-    path: Assets/_Scenes/level1_transition.unity
+    path: Assets/_Scenes/Transitions/level1_transition.unity
     guid: f2587e0d7a9951d418900ccba2746a9f
   - enabled: 1
-    path: Assets/_Scenes/level1.unity
+    path: Assets/_Scenes/Levels/level1.unity
     guid: a743a3a975f74d74b84739ac563b3f76
   - enabled: 1
-    path: Assets/_Scenes/level2_transition.unity
+    path: Assets/_Scenes/Transitions/level2_transition.unity
     guid: fbfe4601e7bf4e84bb06b56002d43b10
   - enabled: 1
-    path: Assets/_Scenes/level2.unity
+    path: Assets/_Scenes/Levels/level2.unity
     guid: 10f90050fa2c4704fb4bd36acb0c090c
   - enabled: 1
-    path: Assets/_Scenes/level3_transition.unity
+    path: Assets/_Scenes/Transitions/level3_transition.unity
     guid: 5da0061a33076c84894b7fd07b52f050
   - enabled: 1
-    path: Assets/_Scenes/level3.unity
+    path: Assets/_Scenes/Levels/level3.unity
     guid: 2dc5dcbb5f1b38046b81c632029e0b08
   - enabled: 1
-    path: Assets/_Scenes/level4_transition.unity
+    path: Assets/_Scenes/Transitions/level4_transition.unity
     guid: 3e986345e79e80d4ca8ce11487171c76
   - enabled: 1
-    path: Assets/_Scenes/level4.unity
+    path: Assets/_Scenes/Levels/level4.unity
     guid: 75d65e317df9a7748a592f6d9e343c5e
   - enabled: 1
     path: Assets/_Scenes/End.unity

@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
 
     public bool levelComplete = false;
 
+    public LevelLoader LL;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,8 @@ public class GameController : MonoBehaviour
     {
         if (levelComplete)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            LL.isComplete = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

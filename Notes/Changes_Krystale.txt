@@ -1,0 +1,10 @@
+HUD and PAUSE canvases scalers don't match(they should match)
+
+Transition on diffrent scenes(need to be in the same scene as a trasition between levels)
+(^ I did this for all Level but the Splah and End)
+
+Splash is a seperete scene(needs to be added to the Main Menu as a Start)
+
+Font in HUD is blurry(Find a new crisp font)
+
+End needs credits/transions(was another tranision scene!)
