@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
     public float time;
     public string nextLevel;
+    public Text text;
     void Update()
     {
         if (isComplete)

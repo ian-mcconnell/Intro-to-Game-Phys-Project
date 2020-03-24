@@ -7,13 +7,11 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour
 {
     public LevelLoader LL;
-    public Text LT;
 
     // Start the game
     public void Play()
     {
         LL.isComplete = true;
-        LT.text = "Level 1";
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

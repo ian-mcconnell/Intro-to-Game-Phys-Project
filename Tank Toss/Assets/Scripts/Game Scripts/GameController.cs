@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
 
     public LevelLoader LL;
 
+    public string nextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class GameController : MonoBehaviour
     {
         if (levelComplete)
         {
+            LL.text.text = nextLevel;
             LL.isComplete = true;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
