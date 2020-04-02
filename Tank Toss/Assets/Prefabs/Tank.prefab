@@ -750,14 +750,17 @@ MonoBehaviour:
   Cannon: {fileID: 2708182529887521290}
   DistanceZ: 30.11
   PlaneObject: {fileID: 0}
+  AimIndicator: {fileID: 0}
   Shell: {fileID: 7330125604927216805, guid: de8ff5394f26f7c419897ca1005e83f2, type: 3}
+  Explosion: {fileID: 6685516865050543281, guid: 187b1018edf8266419411791a2190d34,
+    type: 3}
   FireTransform: {fileID: 2944589945350289059}
   ShootingAudio: {fileID: 1433023461280087233}
   ChargingClip: {fileID: 8300000, guid: b2ac9ebf186d7b546bebcd79977ef528, type: 3}
   FireClip: {fileID: 8300000, guid: 317897ab7c62d07409bcd0703a0adbb7, type: 3}
   DryFireClip: {fileID: 8300000, guid: 5d6f73a23d7162a4c82b4b683070f165, type: 3}
-  MinLaunchForce: 6
-  MaxLaunchForce: 80
+  MinIndicatorScale: 1
+  MaxIndicatorScale: 4
   MaxChargeTime: 0.75
 --- !u!82 &1433023461280087233
 AudioSource:
@@ -893,22 +896,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8191797801768483790}
     m_Modifications:
-    - target: {fileID: 122648, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
-      propertyPath: m_Name
-      value: VolumetricLinePrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397960, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2397960, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3305964, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -964,6 +951,22 @@ PrefabInstance:
     - target: {fileID: 436056, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.08000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 122648, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_Name
+      value: VolumetricLinePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397960, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397960, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305964, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 11475718, guid: 11530f2b0a0cd2442949827ecbb622f2, type: 3}
       propertyPath: m_doNotOverwriteTemplateMaterialProperties
