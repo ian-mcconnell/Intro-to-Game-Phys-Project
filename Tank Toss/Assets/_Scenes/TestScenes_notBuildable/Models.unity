@@ -141,7 +141,7 @@ Transform:
   m_Children:
   - {fileID: 1538156597}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444628872
 GameObject:
@@ -193,7 +193,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 37.3
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -452,7 +452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1538156596
 GameObject:
@@ -5478,6 +5478,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538156596}
   m_Mesh: {fileID: 2063061684}
+--- !u!1001 &1546493687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_Name
+      value: Grassland_Small1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.025849331
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.025849327
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7066342
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70663416
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 4.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.00001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 72a0bcb9ccccebb44b32d087666a5f4e, type: 3}
 --- !u!43 &2063061684
 Mesh:
   m_ObjectHideFlags: 0
@@ -5944,5 +6001,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
