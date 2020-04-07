@@ -70,7 +70,6 @@ public class PlayerController : MonoBehaviour
         {
             AimingTarget = hit.point;
 
-            AimIndicator.transform.position = AimingTarget;
             AimIndicator.transform.localScale = new Vector3(CurrentIndicatorScale, CurrentIndicatorScale, CurrentIndicatorScale);
             //Cannon.transform.LookAt(hitPoint);
 
@@ -195,6 +194,11 @@ public class PlayerController : MonoBehaviour
     private void SetOnCooldownToFalse()
     {
         OnCooldown = false;
+    }
+
+    private void LateUpdate()
+    {
+        AimIndicator.transform.position = AimingTarget;
     }
 
     #endregion
