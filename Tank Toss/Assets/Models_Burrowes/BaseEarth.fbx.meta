@@ -1,31 +1,20 @@
 fileFormatVersion: 2
-guid: 72a0bcb9ccccebb44b32d087666a5f4e
+guid: d18122c8edc915848883557efdbb75ec
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Plane.001
     400000: //RootNode
-    400002: Plane.001
-    2100000: Material.003
-    2100002: Material.002
+    2100000: Material.024
     2300000: //RootNode
-    2300002: Plane.001
     3300000: //RootNode
-    3300002: Plane.001
-    4300000: GrassPlatform
-    4300002: Plane.001
+    4300000: _BaseEarth
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 14b27815c698c6c48914fd5843f117ad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 144a678acc589f6428166784e875b6a2, type: 2}
+      name: Material.024
+    second: {fileID: 2100000, guid: 1fb479301a14dff4599e042f159092a8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
