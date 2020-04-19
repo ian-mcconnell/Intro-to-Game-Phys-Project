@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public float ExplosionForce = 3000f;
+    public float ExplosionForce = 2000f;
     public float ExplosionRadius = 5f;
     public float ExplosionDuration = .4f;
 
@@ -19,7 +19,7 @@ public class Explosion : MonoBehaviour
         
         Rigidbody targetRigidbody = other.GetComponent<Rigidbody>();
 
-        targetRigidbody.AddExplosionForce(ExplosionForce, transform.position, ExplosionRadius, .5f);
+        targetRigidbody.AddExplosionForce(ExplosionForce, transform.position, 0.0f, 0.0f);
 
         if (other.gameObject.tag == "Breakable")
         {
