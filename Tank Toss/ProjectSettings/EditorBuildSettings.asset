@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/LevelSelector.unity
     guid: 872d681b3d4116f4a99ed01acf4169fa
   - enabled: 1
-    path: Assets/_Scenes/Levels/Ian_Mountains.unity
+    path: Assets/_Scenes/Levels/level1.unity
     guid: a743a3a975f74d74b84739ac563b3f76
   - enabled: 1
     path: Assets/_Scenes/Levels/level2.unity
